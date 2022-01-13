@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <link href="css/style.css" rel="stylesheet" />
+  <body>
+    <div class="intro"><h1>Three buttons</h1></div>
+
+    <div class="columns">
+      <div class="my-skills">
+        <h2 id="demo">Two buttons that argue with each other</h2>
+        <h2>Click on each button to see what will happen to you lol!</h2>
+
+        <!-- columns parent -->
+        <div class="columns">
+          <!-- column 1 -->
+          <div class="column">
+            <h3>click on me</h3>
+            <p>You should click on Me!</p>
+            <button id="right">
+              <img
+                src="images/happy_face.jpeg"
+                alt="Lucy"
+                width="80px"
+                height="50px"
+              />
+            </button>
+          </div>
+
+          <!-- column 2 -->
+          <div class="column">
+            <h3>No Click on me Please!!!</h3>
+            <p>NOOOO click on ME!</p>
+            <button id="nRight">
+              <img
+                src="images/lucifer.png"
+                alt="Lucy"
+                width="80px"
+                height="50px"
+              />
+            </button>
+          </div>
+
+          <!-- column 3 -->
+          <div class="column">
+            <h3>Hover Over me to learn</h3>
+            <p>Did you just hover over me?</p>
+            <button class="dont">
+              <img
+                src="images/lucifer.png"
+                alt="Lucy"
+                width="80px"
+                height="50px"
+              />
+              <span class="tooltiptext">
+                Don't hover over me again<br />
+                How dare you?</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>HTML Forms</h2>
+
+    <form action="/action_page.php">
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+
+      <label for="firstName">first name:</label><br />
+      <input type="text" id="firstName" name="firstName" value=" " /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value=" " /><br />
+
+      <label for="email">email</label><br />
+      <input type="email" id="email" name=" " /><br />
+      <label for="pwd">Password:</label><br />
+      <input type="password" id="pwd" name=" " /><br />
+      <label for="submit">Submit</label><br />
+      <input type="submit" value=" Click here to submit" />
+    </form>
+
+    <script>
+      document.getElementById("right").addEventListener("click", function () {
+        document.getElementById("demo").innerHTML = "I Am Right!";
+      });
+
+      document.getElementById("nRight").addEventListener("click", function () {
+        document.getElementById("demo").innerHTML = " NOOOOO!I Am Right!";
+      });
+
+      document.getElementById("nRight").addEventListener("click", function () {
+        document.getElementById("demo").innerHTML = " NOOOOO!I Am Right!";
+      });
+    </script>
+  </body>
+</html>
